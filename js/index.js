@@ -46,7 +46,7 @@ document.getElementById('btn-blog').addEventListener('click', function(){
         container.style.backgroundColor = 'bg-base-100';
     });
 
-
+// Random color in hover:2
     const container2 = document.querySelector('#cardContainer6');
 
     container2.addEventListener('mouseover', () => {
@@ -62,6 +62,7 @@ document.getElementById('btn-blog').addEventListener('click', function(){
         container2.style.backgroundColor = 'bg-base-100';
     });
 
+// Random color in hover:3
     const container3 = document.querySelector('#cardContainer3');
 
     container3.addEventListener('mouseover', () => {
@@ -77,6 +78,7 @@ document.getElementById('btn-blog').addEventListener('click', function(){
         container3.style.backgroundColor = 'bg-base-100';
     });
 
+    // Random color in hover:4
     const container4 = document.querySelector('#cardContainer4');
 
     container4.addEventListener('mouseover', () => {
@@ -93,7 +95,7 @@ document.getElementById('btn-blog').addEventListener('click', function(){
     });
 
 
-// First card:
+// First card handle click:
 document.getElementById('btn-triangle').addEventListener('click', function () {
     const hFieldString = document.getElementById('h-field').value;
     const bFieldString = document.getElementById('b-field').value;
@@ -121,7 +123,7 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
 })
 
-// Second card:
+// Second card handle click:
 document.getElementById('btn-rectangle').addEventListener('click', function () {
     const wField = document.getElementById('w-field').value;
     const lField = document.getElementById('l-field').value;
@@ -149,7 +151,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
 })
 
 
-// Third card:
+// Third card add handler function:
 document.getElementById('btn-parallelogram').addEventListener('click', function () {
     const bField = document.getElementById('bp-field').value = 10;
     const hField = document.getElementById('hp-field').value = 12;
@@ -164,7 +166,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
 })
 
 
-// Forth card:
+// Forth card add handler:
 document.getElementById('btn-rhombus').addEventListener('click', function () {
     const d1Field = document.getElementById('d1-field').value = 16;
     const d2Field = document.getElementById('d2-field').value = 8;
@@ -179,7 +181,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
 })
 
 
-// Fifth Card:
+// Fifth Card add handler:
 document.getElementById('btn-pentagon').addEventListener('click', function () {
     const ppField = document.getElementById('pp-field').value = 10;
     const pentagonField = document.getElementById('pentagon-B-field').value = 12;
@@ -193,7 +195,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function () {
     disabledButton('btn-pentagon');
 })
 
-// Sixth Card
+// Sixth Card add handler:
 document.getElementById('btn-ellipse').addEventListener('click', function () {
     const aeField = document.getElementById('ae-field').value = 10;
     const beField = document.getElementById('be-field').value = 4;
