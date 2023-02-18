@@ -19,6 +19,8 @@ function areaCalculation(geometry, name) {
 }
 
 
+// Disabled button in one function:
+
 
 
 
@@ -48,7 +50,7 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
     const bField = parseFloat(bFieldString);
     const hField = parseFloat(hFieldString);
-    const triangle = (0.05 * hField * bField).toFixed(2);
+    const triangle = (0.5 * hField * bField).toFixed(2);
 
     
     areaCalculation( triangle, 'Triangle');
@@ -94,5 +96,47 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     if (isNaN(bField) || isNaN(hField)) {
         return parallelogram;
     }
-    areaCalculation(parallelogram, 'parallelogram');
+    areaCalculation(parallelogram, 'Parallelogram');
+})
+
+// Forth card:
+document.getElementById('btn-rhombus').addEventListener('click', function(){
+    const d1Field = document.getElementById('d1-field').value = 16;
+    const d2Field = document.getElementById('d2-field').value = 8;
+
+    
+
+    const Rhombus = 0.5 * d1Field * d2Field;
+    if (isNaN(d1Field) || isNaN(d2Field)) {
+        return Rhombus;
+    }
+    areaCalculation(Rhombus, 'Rhombus');
+})
+
+
+// Fifth Card:
+document.getElementById('btn-pentagon').addEventListener('click', function(){
+    const ppField = document.getElementById('pp-field').value = 10;
+    const pentagonField = document.getElementById('pentagon-B-field').value = 12;
+    
+
+    const pentagon = 0.5* ppField * pentagonField;
+    if (isNaN(ppField) || isNaN(pentagonField)) {
+        return pentagon;
+    }
+    areaCalculation(pentagon, 'Pentagon');
+})
+
+// Sixth Card
+document.getElementById('btn-ellipse').addEventListener('click', function(){
+    const aeField = document.getElementById('ae-field').value = 10;
+    const beField = document.getElementById('be-field').value = 4;
+
+    
+
+    const ellipse = (3.1416 * aeField * beField).toFixed(2);
+    if (isNaN(aeField) || isNaN(beField)) {
+        return ellipse;
+    }
+    areaCalculation(ellipse, 'Ellipse');
 })
