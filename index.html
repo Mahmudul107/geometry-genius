@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,148 @@
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/eb6e6243c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="bg-white">
+    
+<!-- Navbar Section -->
      <header>
-        <div class="navbar bg-base-100 shadow-2xl lg:px-20  bg-indigo-100">
-            <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">Interactive</a>
+        <div class="navbar bg-green-200  mx-auto shadow-2xl lg:px-12">
+            <div class="flex-1 block">
+              <h2 class="font-bold fw-30 text-3xl">Interactive</h2>
+              <h2 class="text-3xl">Geometry Genius</h2>
             </div>
+            
             <div class="flex-none gap-2">
-              <button class="btn btn-success">Blog</button>
+              <button class="btn-blog">Blog</button>
             </div>
-          </div>
+        </div>
      </header>
+<!-- Main section -->
+     <main class="">
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div>
+              <div class=" mt-10 product-details w-[100%] gap-4  grid md:grid-cols-3 lg:grid-cols-3">
+                
+                <div class="card w-full bg-base-100 shadow-xl border-solid border">
+                    <figure class="px-10 pt-10 w-full h-40">
+                      <img src="images/triangle.png" alt="triangle" class="rounded-xl mt-10" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.05 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h </p> 
+                      <div class="flex ">
+                        <input class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="h">
+                        <p>cm</p>
+                        <input class="pl-4 w-20  bg-base-200 rounded	" type="text" placeholder="b">
+                        <p>cm</p>
+                      </div>
+                      <div class="card-actions mt-8">
+                        <button class="btn btn-primary rounded-md w-60">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl border-solid border">
+                    <figure class="px-10 pt-10 w-[75%] h-30 rounded-none ml-10">
+                      <img src="images/rectangle.png" alt="triangle" class="rounded-xl mt-10" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w <i class="fa-solid fa-xmark"></i> l </p> 
+                      <div class="flex ">
+                        <input class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="w">
+                        <p>cm</p>
+                        <input class="pl-4 w-20  bg-base-200 rounded	" type="text" placeholder="l">
+                        <p>cm</p>
+                      </div>
+                      <div class="card-actions mt-8">
+                        <button class="btn btn-primary rounded-md w-60">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl border-solid border">
+                    <figure class="px-10 pt-10 w[75%] h-30">
+                      <img src="images/parallelogram.png" alt="triangle" class="rounded-xl mt-10" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h </p> 
+                      <div class="flex ">
+                        <input class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="b=10">
+                        <p>cm</p>
+                        <input class="pl-4 w-20  bg-base-200 rounded	" type="text" placeholder="h=12">
+                        <p>cm</p>
+                      </div>
+                      <div class="card-actions mt-8">
+                        <button class="btn btn-primary rounded-md w-60">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-4 mb-20 product-details w-[100%] gap-4  grid md:grid-cols-3 lg:grid-cols-3">
+                <div class="card w-full bg-base-100 shadow-xl border-solid border">
+                    <figure class="px-10 pt-10 w-[75%] h-30 ml-12">
+                      <img src="images/rhombus.png" alt="triangle" class="rounded-xl mt-10" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) = 0.05 <i class="fa-solid fa-xmark"></i> d1 <i class="fa-solid fa-xmark"></i> d2 </p> 
+                      <div class="flex ">
+                        <input class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="h">
+                        <p>16=cm</p>
+                        <input class="pl-4 w-20  bg-base-200 rounded	" type="text" placeholder="b">
+                        <p>8=cm</p>
+                      </div>
+                      <div class="card-actions mt-8">
+                        <button class="btn btn-primary rounded-md w-60">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl border-solid border">
+                    <figure class="px-10 pt-10 w-[75%] h-30 ml-12">
+                      <img src="images/pentagon.png" alt="triangle" class="rounded-xl mt-10" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) = 0.05 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b </p> 
+                      <div class="flex ">
+                        <input class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="h">
+                        <p>6=cm</p>
+                        <input class="pl-4 w-20  bg-base-200 rounded	" type="text" placeholder="b">
+                        <p>10=cm</p>
+                      </div>
+                      <div class="card-actions mt-8">
+                        <button class="btn btn-primary rounded-md w-60">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl border-solid border">
+                    <figure class="px-10 pt-10 w-[85%] h-50 ml-7">
+                      <img src="images/ellipse.png" alt="triangle" class="rounded-xl mt-10" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Ellipse</h2>
+                     <p class="card-text">Area(A) = &pi;ab</p> 
+                      <div class="flex ">
+                        <input class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="a">
+                        <p>10=cm</p>
+                        <input class="pl-4 w-20  bg-base-200 rounded	" type="text" placeholder="b">
+                        <p>4=cm</p>
+                      </div>
+                      <div class="card-actions mt-8">
+                        <button class="btn btn-primary rounded-md w-60">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card-area ml-auto mb-4 w-full md:w-[30%] lg:w-[30%] mx-auto">
+                <h4 class="underline hover:underline-offset-4 text-center mt-10 font-semibold ml-10 ">Area Calculation</h4>
+            </div>
+        </section>
+     </main>
 
     <script src="js/index.js"></script>
-<body>
+</body>
 </html>
