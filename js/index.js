@@ -81,3 +81,18 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
 
     areaCalculation(rectangle, 'Rectangle');
 })
+
+
+// Third card:
+document.getElementById('btn-parallelogram').addEventListener('click', function(){
+    const bField = document.getElementById('bp-field').value = 10;
+    const hField = document.getElementById('hp-field').value = 12;
+
+    
+
+    const parallelogram = bField*hField;
+    if (isNaN(bField) || isNaN(hField)) {
+        return parallelogram;
+    }
+    areaCalculation(parallelogram, 'parallelogram');
+})
