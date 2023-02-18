@@ -30,6 +30,11 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const hField = parseFloat(hFieldString);
     const totalArea = (0.05 * hField * bField).toFixed(2);
 
+// clear input fields after calculation
+     document.getElementById('h-field').value = '';
+     document.getElementById('b-field').value = '';
+
+    areaCalculation(hField, bField, totalArea);
 
     // Create Table row
 })
