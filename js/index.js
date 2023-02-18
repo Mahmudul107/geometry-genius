@@ -25,6 +25,11 @@ function disabledButton(id) {
 }
 
 
+// Blog Button Anchor added
+document.getElementById('btn-blog').addEventListener('click', function(){
+    window.location.href = 'accordion.html';
+})
+
 // Random color in hover:1
   const container = document.querySelector('#cardContainer1');
 

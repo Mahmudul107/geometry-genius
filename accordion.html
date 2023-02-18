@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accordions Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <div class="collapse">
-        <div class="collapse-title text-xl font-medium">
-          What is DOM and what is purpose of the DOM ?
-        </div>
-        <div class="collapse-content"> 
-          <p>hello</p>
-        </div>
-      </div>
+
+    <header>
+        <h2 class="text-6xl font-bold text-black-600 text-center mb-10 bg-yellow-200 mx-auto p-6">Questions About DOM</h2>
+    </header>
+    <section class="container mx-auto">
+        <div class="collapse w-6/12 mb-4">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium">
+                <h2 class="text-3xl"> <span class=" bg-secondary rounded-lg p-2"> 1.</span> What is DOM and what is purpose of the DOM ?</h2>
+            </div>
+            <div class="collapse-content"> 
+              <p class="ml-16 text-md bg-red-500 rounded-lg p-8 text-white font-semibold secondary"><span class="">Ans:</span> DOM full meaning stands for Document Object Model. Dom represents how a web browser represents a web page and also how each element of the Objects related to other element. The most common way to represents DOM is With <span class="text-xl font-bold italic bg-yellow-400 p-1 rounded-lg">HTML.</span></p>
+            </div>
+          </div>
+        <div class="collapse w-6/12">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium">
+                <h2 class="text-3xl"> <span class=" bg-secondary rounded-lg p-2">2.</span> How will you select HTML element using DOM? Name the DOM methods.</h2>
+            </div>
+            <div class="collapse-content"> 
+              <p class="ml-16 text-md bg-red-500 rounded-lg p-4 text-white font-semibold secondary">
+                The Select object in <span class="text-xl font-bold italic bg-yellow-400 p-1 rounded-lg">HTML.</span> DOM is used to represent an <span class="text-xl font-bold italic bg-yellow-400 p-1 rounded-lg">HTML.</span>. There are 5 ways in which you can select elements in a DOM using selectors. <br>
+                Those are given bellow,<br>
+                <br>
+                a. getElementsByTagName() <br>
+                b. getElementsByClassName() <br>
+                c. getElementById() <br>
+                d. querySelector() <br>
+                e. querySelectorAll()</p>
+            </div>
+          </div>
+        <div class="collapse w-6/12">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium">
+                <h2 class="text-3xl"><span class=" bg-secondary rounded-lg p-2">3.</span> What is event Bubble ? <span class=" bg-secondary"></h2>
+            </div>
+            <div class="collapse-content mb-12"> 
+              <p class="ml-16 text-md bg-red-500 rounded-lg p-8 text-white font-semibold secondary"><span class="">Ans:</span> Event bubble is a concept of DOM. It relates to the order in which event handlers are called when one element is nested inside a second element, and both elements have registered a listener for the same event</span></p>
+            </div>
+          </div>
+        <div class="collapse w-6/12">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium">
+                <h2 class="text-3xl"> <span class=" bg-secondary rounded-lg p-2">4.</span> What is call back function and why will I use it ?</h2>
+            </div>
+            <div class="collapse-content"> 
+              <p class="ml-16 mb-10 text-md bg-red-500 rounded p-8 rounded-lg text-white font-semibold secondary"><span class="">Ans:</span> A callback function passed as argument to another. It helps us develop asynchronous <span class="text-xl font-bold italic bg-yellow-400 p-1 rounded-lg">JavaScript</span> code and keeps us safe from problems and errors.</p>
+            </div>
+          </div>
+    </section>
+    <script src="js/optional.js"></script>
 </body>
+
 </html>
