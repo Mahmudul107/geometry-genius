@@ -38,7 +38,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Triangle</h2>
-                      <p>Area (A) = <span id="area-triangle">0.05 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</span> </p> 
+                      <p>Area (A) = <span id="area-triangle">0.05 </span> <i class="fa-solid fa-xmark"></i>h<i class="fa-solid fa-xmark"></i> b</p> 
                       <div class="flex ">
                         <input id="h-field" class="pl-4 w-20 bg-base-200 rounded	" type="text" placeholder="h">
                         <p>cm</p>
@@ -146,10 +146,21 @@
             </div>
             <div class="card-area ml-auto mb-4 w-full md:w-[30%] lg:w-[30%] mx-auto">
                 <h4 class="underline hover:underline-offset-4 text-center mt-10 font-semibold ml-10 ">Area Calculation</h4>
+
+                <!-- Table data -->
+                <div class="overflow-x-auto">
+                  <table class="table w-full">
+                    <!-- head -->
+                    <tbody id="table-container">
+                      
+                    </tbody>
+                  </table>
+                </div>
             </div>
+            
+            
         </section>
      </main>
-
     <script src="js/index.js"></script>
 </body>
 </html>
